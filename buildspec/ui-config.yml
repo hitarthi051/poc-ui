@@ -11,9 +11,10 @@ phases:
   post_build:
     commands:
       - echo "Uploading files to S3"
-      # - aws s3 cp ./build s3://ui-artifacts-poc-zero-downtime/ --recursive
-      - aws s3 cp ./build s3://$UIARTIFACTBUCKETNAME/ --recursive
-  artifacts:
-    files:
-      - build.zip
-    name: "zero-downtime-poc-ui.zip"
+      - aws s3 cp ./build s3://ui-artifacts-poc-zero-downtime-v3/ --recursive
+      - zip -r build.zip build
+     # - aws s3 cp ./build s3://$UIARTIFACTBUCKETNAME/ --recursive
+artifacts:
+  files:
+     - build.zip
+  name: "zero-downtime-poc-ui.zip"
