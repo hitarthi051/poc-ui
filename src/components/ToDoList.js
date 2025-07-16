@@ -174,7 +174,7 @@ const ToDoList = () => {
                           {task.remaining_days === "Overdue" ? (
                             <span style={{ color: "red" }}>Deadline passed</span>
                           ) : (
-                            `${task.remaining_days} days remaining`
+                            `${task.remaining_days} `
                           )}
                         </td>
                         <td>
