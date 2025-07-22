@@ -17,7 +17,7 @@ phases:
 artifacts:
   # files:
   #    - build.zip
-  # name: "zero-downtime-poc-ui.zip"
+  # name: "zero-downtime-poc-ui.zip" 
 
   base-directory: build 
   files:
