@@ -20,7 +20,7 @@ function AddUser({ show, handleAddUserModalClose }) {
       console.log(requestBody);
 
       const response = await axios.post(
-        "https://mraesrsn9j.execute-api.eu-west-1.amazonaws.com/dev/add-user",
+        "testapi.infra.icpo.altosaint.co.uk/add-user",
         requestBody
       );
       console.log("Task added successfully:", response.data);

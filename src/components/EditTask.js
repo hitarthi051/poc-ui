@@ -53,7 +53,7 @@ function EditTask({
       console.log("task_deadline in request body:: " + requestBody.task_deadline);
 
       const response = await axios.put(
-        `https://mraesrsn9j.execute-api.eu-west-1.amazonaws.com/dev/update-task/${taskDetails.id}`,
+        `testapi.infra.icpo.altosaint.co.uk/update-task/${taskDetails.id}`,
         requestBody
       );
       console.log("Updated task:", response.data);

@@ -38,7 +38,7 @@ const ToDoList = () => {
     setShowAddTaskModal(false);
     await axios
       .post(
-        "https://mraesrsn9j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username",
+        "testapi.infra.icpo.altosaint.co.uk/get-tasks-by-username",
         { username }
       )
       .then((res) => {
@@ -57,7 +57,7 @@ const ToDoList = () => {
   const deleteTask = async (id) => {
     try {
       await axios.delete(
-        `https://mraesrsn9j.execute-api.eu-west-1.amazonaws.com/dev/delete-task/${id}`
+        `testapi.infra.icpo.altosaint.co.uk/delete-task/${id}`
       );
       toast.success("Task deleted successfully!", {
         className: "custom-toast",
@@ -90,7 +90,7 @@ const ToDoList = () => {
 
     try {
       const response = await axios.post(
-        "https://mraesrsn9j.execute-api.eu-west-1.amazonaws.com/dev/get-single-task",
+        "testapi.infra.icpo.altosaint.co.uk/get-single-task",
         {
           id,
         }
