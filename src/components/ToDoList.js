@@ -38,7 +38,7 @@ const ToDoList = () => {
     setShowAddTaskModal(false);
     await axios
       .post(
-        "693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username",
+        "https://693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username",
         { username }
       )
       .then((res) => {
@@ -57,7 +57,7 @@ const ToDoList = () => {
   const deleteTask = async (id) => {
     try {
       await axios.delete(
-        `693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/delete-task/${id}`
+        `https://693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/delete-task/${id}`
       );
       toast.success("Task deleted successfully!", {
         className: "custom-toast",
@@ -90,7 +90,7 @@ const ToDoList = () => {
 
     try {
       const response = await axios.post(
-        "693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-single-task",
+        "https://693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-single-task",
         {
           id,
         }
