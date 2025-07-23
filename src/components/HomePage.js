@@ -18,9 +18,9 @@ const HomePage = () => {
 
   const getAllTasks = async () => {
     console.log(username);
-    console.log("693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username");
+    console.log("https://693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username");
     await axios
-      .post("693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username", { username })
+      .post("https://693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username", { username })
       .then((res) => {
         console.log(res.data);
         navigate("/my-tasks", {

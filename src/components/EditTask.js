@@ -45,7 +45,7 @@ function EditTask({
       };
 
       const response = await axios.put(
-        `693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/update-task/${taskDetails.id}`,
+        `https://693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/update-task/${taskDetails.id}`,
         requestBody
       );
       console.log("Updated task:", response.data);
