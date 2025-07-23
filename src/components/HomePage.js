@@ -18,9 +18,9 @@ const HomePage = () => {
 
   const getAllTasks = async () => {
     console.log(username);
-    console.log("testapi.infra.icpo.altosaint.co.uk/get-tasks-by-username");
+    console.log("693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username");
     await axios
-      .post("testapi.infra.icpo.altosaint.co.uk/get-tasks-by-username", { username })
+      .post("693utogn2j.execute-api.eu-west-1.amazonaws.com/dev/get-tasks-by-username", { username })
       .then((res) => {
         console.log(res.data);
         navigate("/my-tasks", {
